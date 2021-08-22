@@ -1,0 +1,235 @@
+/*commuin styling*/
+body {
+  margin: 0px;
+}
+h1, a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+ul li {
+  list-style: none;
+}
+/*styling the navigation bar*/
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px;
+}
+.logo img {
+  height: 50px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.nav-bar-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.nav-bar-phone {
+  margin: 5px;
+  background-color: rgb(78, 113, 216);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 900;
+}
+.nav-bar-link a:hover {
+  color: rgb(78, 113, 216);
+}
+.nav-bar-link a.active {
+  color: rgb(78, 113, 216);
+}
+/*styling the main container*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.slogan {
+  background-image: url(https://im.ge/i/WXDaK);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding-left: 10px;
+  padding-top: 190px;
+}
+.offers-description {
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/*styling the offers*/
+.offers-item {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.offers-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 0px 1px rgb(78, 113, 216) inset;
+}
+
+.offers-item a {
+  text-decoration: none;
+  color: rgb(78, 113, 216);
+}
+
+.offers-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+ /* styling the footer*/
+.footer {
+  background-color: rgb(202, 205, 214);
+  display: flex;
+  flex-direction: column;
+ }
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 100px;
+}
+.footer-item a {
+  text-decoration: none;
+  color: black;
+}
+.footer-item ul {
+  padding: 0;
+}
+.copyrights {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.copyrights-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+ /* adding animation to the copyrights-links*/
+.copyrights a {
+ width: 80px;
+ height: 80px;
+ background-color: #fff;
+ line-height: 80px;
+ font-size: 35px;
+ margin: 0 10px;
+ display: block;
+ border-radius: 50%;
+ position: relative;
+ overflow: hidden;
+ border: 3px solid #fff;
+ z-index: 1;
+
+}
+.copyrights a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+.copyrights a:hover .icon {
+ color: #fff;
+ transform: rotateY(360deg);
+}
+.copyrights a:before {
+ content: "";
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: #f00;
+ transition: .5s;
+ z-index: 2;
+}
+.copyrights a:hover:before {
+  top: 0;
+}
+.copyrights ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+.copyrights ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+.copyrights ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+.copyrights ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+/*----------Responsive Structure--------- */
+@media only screen and (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .nav-bar-link {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+    border-bottom: solid 1px rgb(78, 113, 216);
+  }
+  .nav-bar-phone {
+    padding: 20px 20px;
+  }
+  .slogan {
+    background-image: url(https://im.ge/i/WXIA9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  .offers-row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: center;
+  }
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+   }
+  .copyrights-links {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
